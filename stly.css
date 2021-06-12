@@ -231,7 +231,7 @@ ul.primary-menu li a{
     background: rgb(96, 115, 221);
    
 }
-.img-icon span {
+.img-icon span{
     font-weight: 200;
 	position: relative;
     color: #fff;
@@ -253,4 +253,9 @@ ul.primary-menu li a{
     position: relative;
     top: 714px;
     left: 829px;
+}
+
+
+.banner{
+    overflow: hidden;
 }
