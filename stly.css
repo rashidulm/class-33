@@ -164,11 +164,11 @@ ul.primary-menu li a{
 
 }
 .banner-content h1{
-    font-size: 54px;
+    font-size: 53px;
 
 }
 .banner-content p{
-    font-size: 22px;
+    font-size: 20px;
     color: #a2a4a7e3;
 
 }
@@ -187,13 +187,13 @@ ul.primary-menu li a{
     overflow: hidden;
 }
 .banner-img {
-	height: 850px;
-	width: 946px;
+	height: 1000px;
+	width: 1000px;
 	border-radius: 50%;
 	overflow: hidden;
 	position: relative;
-	top: -208px;
-	left: 68px;
+	top: -224px;
+	left: 83px;
 }
 .banner-img img{
     width: 100%;
@@ -236,8 +236,8 @@ ul.primary-menu li a{
 	position: relative;
     color: #fff;
 	font-size: 37px;
-	top: 700px;
-	left: 875px;
+	top: 735px;
+	left: 985px;
     
     width: 60px;
     height: 60px;
@@ -251,8 +251,8 @@ ul.primary-menu li a{
 }
 .spinner-grow{
     position: relative;
-    top: 714px;
-    left: 829px;
+    top: 750px;
+    left: 940px;
 }
 
 
