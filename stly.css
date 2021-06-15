@@ -231,24 +231,30 @@ ul.primary-menu li a{
     background: rgb(96, 115, 221);
    
 }
-.img-icon span{
-    font-weight: 200;
-	position: relative;
-    color: #fff;
-	font-size: 37px;
-	top: 735px;
-	left: 985px;
-    
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #3763eb;
-    display: block;
+
+
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: 90px;
+    z-index: 9999999999999;
 }
+.go-top span a{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: blue;
+    color: #fff;    
+    text-align: center;
+    line-height: 50px;  
+}
+
 .img-icon span a{
     color: #fff;
 }
+
 .spinner-grow{
     position: relative;
     top: 750px;
@@ -258,4 +264,218 @@ ul.primary-menu li a{
 
 .banner{
     overflow: hidden;
+}
+/* .service-text */
+
+.service-text span{
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+    color: #7594f1;
+}
+.service-text h2{
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+}
+.service-text p{
+    font-size: 20px;
+    color: #6e657e;
+    margin-top: 50px;
+}
+.service-text h2::after{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #3763eb;
+}
+
+.service-itme{
+   
+
+}
+
+.service-box{
+    background: #f6f9fc;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+    /* z-index: ; */
+    transition: .5s;
+    border-radius: 10px;
+    transition: .5s;
+   
+    
+}
+.service-box h3{
+    font-size: 19px;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+.service-icon span{
+
+}
+.service-icon a{
+
+}
+.service-icon i{
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    background-color: #3763eb;
+    border-radius: 50% 50% 50% 0;
+    margin-top: 10px;
+    position: relative;
+    
+    
+
+}
+.service-icon i::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 45px;
+    top: 95px;
+    left: -4px;
+    transition: .5s;
+    
+    background: #3763eb;
+}
+
+.service-box p{
+    margin-top: 50px;
+}
+.service-img{
+    position: relative;
+    top: -187px;
+    left: -59px;
+    
+    z-index: -1;
+    
+}
+.service-box:hover{
+    background: #3763eb;
+    transform: scaley(1.1);
+    transition: .5s;
+    
+   
+   
+}
+.service-box:hover h3{
+    color: #fff;
+}
+.service-box:hover .service-icon i{
+    background: #fff;
+    color: blue;
+    line-height: 70px;
+}
+.service-box:hover p{
+    color: #fff;
+}
+.service-box:hover .service-icon i::after{
+    background: #fff;
+    
+    
+}
+.about-text{
+    margin: auto;
+    text-align: center;
+    margin-top: -313px;
+    color: #fff;
+
+}
+.about-text h2{
+    font-size:50px;
+    font-weight: 600;
+    position: relative;
+}
+.about-text h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    top: 70px;
+    left: 50%;
+    background: #fff;
+}
+.about-text h5{
+
+}
+.about-text p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.about{
+    background: url(https://i.ibb.co/p14KQCM/video-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50vh;
+    background-color:  rgba(1, 1, 0, 0.7);
+    background-blend-mode: overlay;
+}
+
+
+.about-btn{
+    background-color: #fff;
+    color: blue;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    
+
+    
+    
+
+}
+.about-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: 5px double #fff;
+    
+    border-radius: 50%;
+    animation: rashidul 2s ease-in-out infinite;
+}
+
+.butoon{
+    margin-top: 400px;
+}
+
+
+
+@keyframes rashidul {
+   0%{
+       transform: scale(0);
+       
+   }
+   25%{
+       transform: scale(1);
+       opacity: 0.8;
+   }
+   50%{
+       transform: scale(3);
+       opacity: 0.5;
+   }
+   75%{
+       transform: scale(5);
+       opacity: 0.1;
+   }
+   100%{
+       transform: scale(0);
+       opacity: 0;
+   }
 }
