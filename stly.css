@@ -1,5 +1,6 @@
-body,h1,h2,h3,h4,h5,h5,h6 a,p,span{
-    font-family: 'Roboto', sans-serif;
+
+body,p,span,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Spartan', sans-serif;
 }
 img{
     max-width: 100%;
@@ -269,19 +270,23 @@ ul.primary-menu li a{
 
 .service-text span{
     margin-bottom: 20px;
-    display: inline-block;
+    display: block;
     font-size: 20px;
     color: #7594f1;
+    text-align: left;
 }
 .service-text h2{
-    font-size: 48px;
+    font-size: 35px;
+    text-align: left;
     font-weight: 600;
     position: relative;
 }
 .service-text p{
-    font-size: 20px;
+    font-size: 14px;
     color: #6e657e;
     margin-top: 50px;
+    text-align: left;
+    font-weight: 400;
 }
 .service-text h2::after{
     content: "";
@@ -340,10 +345,10 @@ ul.primary-menu li a{
 .service-icon i::after{
     content: "";
     position: absolute;
-    height: 4px;
-    width: 45px;
-    top: 95px;
-    left: -4px;
+    height: 3px;
+    width: 40px;
+    top: 85px;
+    left: -2px;
     transition: .5s;
     
     background: #3763eb;
@@ -375,34 +380,40 @@ ul.primary-menu li a{
     background: #fff;
     color: blue;
     line-height: 70px;
+    transition: .5s;
 }
 .service-box:hover p{
     color: #fff;
 }
 .service-box:hover .service-icon i::after{
     background: #fff;
+    width: 60px;
+    transition: .5s;
     
     
 }
 .about-text{
     margin: auto;
     text-align: center;
-    margin-top: -313px;
+    margin-top: 170px;
     color: #fff;
+    display: inline-block;
+    margin-left: 335px;
 
 }
 .about-text h2{
-    font-size:50px;
+    font-size:71px;
     font-weight: 600;
     position: relative;
+    /* margin-top: 112px; */
 }
 .about-text h2::before{
     content: "";
     position: absolute;
     height: 3px;
-    width: 50px;
-    top: 70px;
-    left: 50%;
+    width: 90px;
+    top: 95px;
+    left: 45%;
     background: #fff;
 }
 .about-text h5{
@@ -410,72 +421,260 @@ ul.primary-menu li a{
 }
 .about-text p{
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .about{
-    background: url(https://i.ibb.co/p14KQCM/video-bg.jpg) no-repeat center center;
-    background-size: cover;
-    padding: 50vh;
-    background-color:  rgba(1, 1, 0, 0.7);
+    background-image: url(https://i.ibb.co/P62s7st/video-bg.jpg);
+   
+    
+    background-color: rgba(11, 36, 61, 0.9);
     background-blend-mode: overlay;
+    padding-bottom: 200px;
 }
+
 
 
 .about-btn{
-    background-color: #fff;
-    color: blue;
-    font-size: 30px;
+    background: #fff;
+    color: #3763eb;
+    font-size: 20px;
     height: 50px;
     width: 50px;
     line-height: 50px;
     text-align: center;
     border-radius: 50%;
     position: relative;
-    
+}
 
-    
-    
+.btnbtn{
+    margin-top: 250px;
+}
+
+.animetion-div{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: 1px double #ddd;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation: animated 2s ease-in-out infinite;
+}
+
+
+
+.animetion-div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: 1px double #ddd;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.animetion-div::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: 1px double #ddd;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes animated {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%{
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(2);
+        opacity: 0.3;
+    }
+    75%{
+        transform: scale(2.5);
+        opacity: 0.;
+    }
+    100%{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.Pricing-text{
+    text-align: center;
+    margin: auto;
+    background: #f6f9fc;
 
 }
-.about-btn::after{
+.Pricing-text span{
+    font-size: 19px;
+    color: #96adf4;
+}
+.Pricing-text h2{
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.Pricing-text h2::before{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 45%;
+    height: 3px;
+  width: 70px;
+  background: #3763eb;
+  
+}
+.Pricing-text span {
+	font-size: 23px;
+	color: #96adf4;
+    
+}
+.Pricing-text p{
+    font-size: 17px;
+    color: #aeabba;
+}
+
+/* service-text */
+.Pricing-section{
+    background: #f6f9fc;
+}
+
+.service-text h4{
+    text-align: center;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 20px 0;
+
+}
+.service-text h1{
+    font-weight: 500;
+
+}
+.service-text p{
+    color: #9893a5;
+    padding-bottom: 30px;
+    margin-top: 8px;
+    text-justify: auto;
+}
+.service-text{
+    background: fff;
+    text-align: center;
+    padding: 50px 48px;
+    box-sizing: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+}
+.pricing-btn a{
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 17px;
+    background: #3763eb;
+   
+}
+.service-text ul{
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.service-text ul li{
+    color: #606060;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.service-text{
+    background: #fff;
+}
+
+/* blog section */
+
+.blog-section{
+    background: url(https://i.ibb.co/S6rK6qC/free-bg.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.blog-section::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
-    background: #fff;
-    border: 5px double #fff;
+   width: 100%;
+   background: #3763eb;
+   opacity: 0.9;
+   z-index: -1;
+
+
+}
+
+.blog-text{
+    text-align: center;
+    margin-top: 264px;
+    color: #fff;
+    margin-left: 33px;
+}
+.blog-text h4{
     
-    border-radius: 50%;
-    animation: rashidul 2s ease-in-out infinite;
+
+}
+.blog-text h1{
+    font-weight: 500;
+    font-size: 74px;
+    position: relative;
+    /* left: 33px; */
+
+}
+.blog-text p{
+    font-size: 37px;
 }
 
-.butoon{
-    margin-top: 400px;
+.blog-text h1::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 45%;
+    height: 3px;
+  width: 70px;
+  background: #fff;
+  font-family: 'Robik', sans-serif;
 }
 
-
-
-@keyframes rashidul {
-   0%{
-       transform: scale(0);
-       
-   }
-   25%{
-       transform: scale(1);
-       opacity: 0.8;
-   }
-   50%{
-       transform: scale(3);
-       opacity: 0.5;
-   }
-   75%{
-       transform: scale(5);
-       opacity: 0.1;
-   }
-   100%{
-       transform: scale(0);
-       opacity: 0;
-   }
+.blog-btn a{
+    border-radius: 30px;
+    color: #547aed;
+    padding: 10px 30px;
+    font-size: 17px;
+    background: #fff;
+    transition: .5s;
+    border: none;
+}
+.blog-btn a:hover{
+    background: #3763eb;
 }
