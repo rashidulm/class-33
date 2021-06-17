@@ -678,3 +678,8 @@ ul.primary-menu li a{
 .blog-btn a:hover{
     background: #3763eb;
 }
+
+
+.service-text hr{
+	background: linear-gradient(45deg,#fff,#111,#fff);
+}
