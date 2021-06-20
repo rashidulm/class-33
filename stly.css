@@ -463,7 +463,9 @@ ul.primary-menu li a{
     animation: animated 2s ease-in-out infinite;
 }
 
-
+.grybg{
+    background: #f9fafb;
+}
 
 .animetion-div::after{
     content: "";
@@ -682,4 +684,113 @@ ul.primary-menu li a{
 
 .service-text hr{
 	background: linear-gradient(45deg,#fff,#111,#fff);
+}
+/* Newsletter-section */
+
+.Newsletter-bg{
+    background: #3763eb;
+    /* padding: 100px 0;
+    border-radius: 5px; */
+}
+.Newsletter-text{
+    color: #fff;
+    padding: 100px 0;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.Newsletter-text h4{
+    margin-top: -45px;
+    font-size: 35px;
+}
+.Newsletter-text p {
+	/* padding: 30px; */
+	font-size: 20px;
+	margin-top: 30px;
+}
+.form{
+    
+    margin-left: 30px;
+    margin-top: -20px;
+}
+.form-button
+.bttn-css{
+   border: 1px solid #ddd;
+    background: #3763eb;
+    margin-top: -15px;
+    padding: 13px 30px;
+}
+.text-box{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding: 56px;
+    background: #fff;
+}
+.text-left{
+   
+}
+.text-left h6{
+    
+    
+    font-size: 26px;
+}
+.text-left p{
+    font-size: 15px;
+    margin-top: 44px;
+   
+}
+.button-tow{
+    padding-top: 35px;
+    
+}
+.button-tow a{
+    padding: 15px 30px;
+}
+/* hover section */
+
+.logo-img{
+    height: 170px;
+}
+.logo-img img{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.logo-img:hover img{
+    opacity: 1;
+    background: #f6f9fc;
+}
+
+/* hover-text */
+
+.hover-text{
+    
+
+}
+.hover-text h6{
+    color: #7c9df0;
+
+}
+.hover-text h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 22px;
+    position: relative;
+}
+.hover-text p{
+    font-size: 20px;
+    margin-top: 40px;
+    color: #ada8b6;
+    
+}
+.hover-text h3::after{
+    content: "";
+    position: absolute;
+    top: 175px;
+    left: 0;
+    height: 3px;
+    width: 50px;
+    background: #3763eb;
 }
